@@ -1,0 +1,2 @@
+db.pets.find({name: /^[ABCDabcd]/g})
+db.pets.find().sort({age: -1}).limit(2).skip(2)
