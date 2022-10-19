@@ -1,2 +1,5 @@
 db.pets.find({name: /^[ABCDabcd]/g})
 db.pets.find().sort({age: -1}).limit(2).skip(2)
+
+//hw_60
+db.students.find({scores: {$elemMatch: {type: 'exam', score:{$gt: 90}}}})
